@@ -1,0 +1,268 @@
+libgweather
+------------------------------------------
+libgweather is a library to access weather information from online
+services for numerous locations.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  GConf2-2.22.0-1
+  gdk-pixbuf2-2.12.10-1
+  glib2-2.16.3-1
+  gnome-vfs2-2.22.0-1
+  gtk2-x11-2.12.10-1
+  libintl8-0.15-1
+  libxml2-2.6.32-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.61-1
+  automake1.10-1.10.1-1
+  binutils-20060817-1
+  cygport-0.3.12-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  gettext-devel-0.15-1
+  glib2-devel-2.16.3-1
+  gnome-common-2.20.0-2
+  intltool-0.37.1-1
+  libtool-2.2.2-2
+  make-3.81-1
+  pkg-config-0.23a-2
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.gnome.org/
+
+Canonical download:
+  ftp://ftp.gnome.org/pub/gnome/sources/libgweather/
+
+-------------------------------------------
+
+Build instructions:
+  unpack libgweather-2.22.3-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./libgweather-2.22.3-X.cygport all
+
+This will create:
+  /usr/src/libgweather-2.22.3-X-src.tar.bz2
+  /usr/src/libgweather-2.22.3-X.tar.bz2
+  /usr/src/libgweather-devel-2.22.3-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(libgweather)
+  /etc/gconf/schemas/gweather.schemas
+  /etc/postinstall/libgweather.sh
+  /etc/preremove/libgweather.sh
+  /usr/bin/cyggweather-1.dll
+  /usr/share/doc/libgweather-2.22.3/COPYING
+  /usr/share/doc/libgweather-2.22.3/ChangeLog
+  /usr/share/doc/libgweather-2.22.3/INSTALL
+  /usr/share/doc/libgweather-2.22.3/MAINTAINERS
+  /usr/share/doc/libgweather-2.22.3/NEWS
+  /usr/share/doc/libgweather-2.22.3/README
+  /usr/share/libgweather/Locations.ang.xml
+  /usr/share/libgweather/Locations.ar.xml
+  /usr/share/libgweather/Locations.as.xml
+  /usr/share/libgweather/Locations.az.xml
+  /usr/share/libgweather/Locations.be.xml
+  /usr/share/libgweather/Locations.be@latin.xml
+  /usr/share/libgweather/Locations.bg.xml
+  /usr/share/libgweather/Locations.bn.xml
+  /usr/share/libgweather/Locations.bn_IN.xml
+  /usr/share/libgweather/Locations.bs.xml
+  /usr/share/libgweather/Locations.ca.xml
+  /usr/share/libgweather/Locations.cs.xml
+  /usr/share/libgweather/Locations.cy.xml
+  /usr/share/libgweather/Locations.da.xml
+  /usr/share/libgweather/Locations.de.xml
+  /usr/share/libgweather/Locations.dz.xml
+  /usr/share/libgweather/Locations.el.xml
+  /usr/share/libgweather/Locations.en_CA.xml
+  /usr/share/libgweather/Locations.en_GB.xml
+  /usr/share/libgweather/Locations.es.xml
+  /usr/share/libgweather/Locations.et.xml
+  /usr/share/libgweather/Locations.eu.xml
+  /usr/share/libgweather/Locations.fa.xml
+  /usr/share/libgweather/Locations.fi.xml
+  /usr/share/libgweather/Locations.fr.xml
+  /usr/share/libgweather/Locations.ga.xml
+  /usr/share/libgweather/Locations.gl.xml
+  /usr/share/libgweather/Locations.gu.xml
+  /usr/share/libgweather/Locations.he.xml
+  /usr/share/libgweather/Locations.hi.xml
+  /usr/share/libgweather/Locations.hr.xml
+  /usr/share/libgweather/Locations.hu.xml
+  /usr/share/libgweather/Locations.id.xml
+  /usr/share/libgweather/Locations.it.xml
+  /usr/share/libgweather/Locations.ja.xml
+  /usr/share/libgweather/Locations.ka.xml
+  /usr/share/libgweather/Locations.kn.xml
+  /usr/share/libgweather/Locations.ko.xml
+  /usr/share/libgweather/Locations.ku.xml
+  /usr/share/libgweather/Locations.ky.xml
+  /usr/share/libgweather/Locations.lt.xml
+  /usr/share/libgweather/Locations.lv.xml
+  /usr/share/libgweather/Locations.mai.xml
+  /usr/share/libgweather/Locations.mg.xml
+  /usr/share/libgweather/Locations.mk.xml
+  /usr/share/libgweather/Locations.ml.xml
+  /usr/share/libgweather/Locations.mn.xml
+  /usr/share/libgweather/Locations.mr.xml
+  /usr/share/libgweather/Locations.ms.xml
+  /usr/share/libgweather/Locations.nb.xml
+  /usr/share/libgweather/Locations.ne.xml
+  /usr/share/libgweather/Locations.nl.xml
+  /usr/share/libgweather/Locations.nn.xml
+  /usr/share/libgweather/Locations.oc.xml
+  /usr/share/libgweather/Locations.or.xml
+  /usr/share/libgweather/Locations.pa.xml
+  /usr/share/libgweather/Locations.pl.xml
+  /usr/share/libgweather/Locations.pt.xml
+  /usr/share/libgweather/Locations.pt_BR.xml
+  /usr/share/libgweather/Locations.ro.xml
+  /usr/share/libgweather/Locations.ru.xml
+  /usr/share/libgweather/Locations.rw.xml
+  /usr/share/libgweather/Locations.si.xml
+  /usr/share/libgweather/Locations.sk.xml
+  /usr/share/libgweather/Locations.sl.xml
+  /usr/share/libgweather/Locations.sq.xml
+  /usr/share/libgweather/Locations.sr.xml
+  /usr/share/libgweather/Locations.sr@Latn.xml
+  /usr/share/libgweather/Locations.sv.xml
+  /usr/share/libgweather/Locations.ta.xml
+  /usr/share/libgweather/Locations.te.xml
+  /usr/share/libgweather/Locations.th.xml
+  /usr/share/libgweather/Locations.tr.xml
+  /usr/share/libgweather/Locations.uk.xml
+  /usr/share/libgweather/Locations.vi.xml
+  /usr/share/libgweather/Locations.xml
+  /usr/share/libgweather/Locations.zh_CN.xml
+  /usr/share/libgweather/Locations.zh_HK.xml
+  /usr/share/libgweather/Locations.zh_TW.xml
+  /usr/share/libgweather/locations.dtd
+  /usr/share/locale/am/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/ar/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/as/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/az/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/be/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/be@latin/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/bg/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/bn/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/bn_IN/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/bs/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/ca/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/cs/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/cy/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/da/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/de/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/dz/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/el/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/en_CA/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/en_GB/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/es/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/es_AR/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/es_CL/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/es_CO/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/es_CR/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/es_DO/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/es_EC/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/es_ES/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/es_GT/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/es_HN/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/es_MX/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/es_NI/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/es_PA/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/es_PE/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/es_PR/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/es_SV/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/es_UY/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/es_VE/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/et/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/eu/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/fa/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/fi/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/fr/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/ga/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/gl/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/gu/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/he/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/hi/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/hr/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/hu/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/hy/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/id/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/is/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/it/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/ja/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/ka/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/kn/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/ko/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/ku/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/ky/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/lt/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/lv/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/mg/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/mk/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/ml/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/mn/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/mr/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/ms/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/nb/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/ne/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/nl/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/nn/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/oc/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/or/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/pa/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/pl/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/pt/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/ro/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/ru/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/rw/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/si/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/sk/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/sl/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/sq/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/sr/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/sr@Latn/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/sv/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/ta/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/te/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/th/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/tr/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/uk/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/vi/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/wa/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/xh/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/zh_CN/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/zh_HK/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/zh_TW/LC_MESSAGES/libgweather.mo
+
+(libgweather-devel)
+  /usr/include/libgweather/gweather-gconf.h
+  /usr/include/libgweather/gweather-prefs.h
+  /usr/include/libgweather/gweather-xml.h
+  /usr/include/libgweather/weather.h
+  /usr/lib/libgweather.dll.a
+  /usr/lib/libgweather.la
+  /usr/lib/pkgconfig/gweather.pc
+
+------------------
+
+Port Notes:
+
+----- version 2.22.3-1 -----
+Version bump.
+
+----- version 2.22.2-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

@@ -1,0 +1,6 @@
+category: Gnome Net
+requires: cygwin libgweather GConf2-devel glib2-devel gnome-vfs2-devel gtk2-x11-devel gettext libxml2-devel
+external-source: libgweather
+sdesc: "GNOME online weather information library (development)"
+ldesc: "libgweather is a library to access weather information from 
+online services for numerous locations."

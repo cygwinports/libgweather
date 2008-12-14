@@ -5,27 +5,26 @@ services for numerous locations.
 
 Runtime requirements:
   cygwin-1.5.25-15
-  GConf2-2.22.0-1
-  gdk-pixbuf2-2.12.10-1
-  glib2-2.16.3-1
-  gnome-vfs2-2.22.0-1
-  gtk2-x11-2.12.10-1
-  libintl8-0.15-1
-  libxml2-2.6.32-1
+  libgconf2_4-2.24.0-1
+  libgdk_pixbuf2.0_0-2.14.5-1
+  libglib2.0_0-2.18.3-1
+  libgtk2.0_0-2.14.5-1
+  libintl8-0.17-2
+  libsoup2.4_1-2.24.2.1-1
+  libxml2-2.6.32-2
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.61-1
-  automake1.10-1.10.1-1
-  binutils-20060817-1
-  cygport-0.3.12-1
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
+  binutils-20080624-2
+  cygport-0.4.3-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
-  gettext-devel-0.15-1
-  glib2-devel-2.16.3-1
-  gnome-common-2.20.0-2
-  intltool-0.37.1-1
-  libtool-2.2.2-2
+  gettext-devel-0.17-2
+  gnome-common-2.24.0-1
+  intltool-0.40.5-1
+  libtool-2.2.6a-1
   make-3.81-1
   pkg-config-0.23a-2
   sed-4.1.5-2
@@ -39,32 +38,33 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libgweather-2.22.3-X-src.tar.bz2
+  unpack libgweather-2.24.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libgweather-2.22.3-X.cygport all
+  cygport ./libgweather-2.24.2-X.cygport all
 
 This will create:
-  /usr/src/libgweather-2.22.3-X-src.tar.bz2
-  /usr/src/libgweather-2.22.3-X.tar.bz2
-  /usr/src/libgweather-devel-2.22.3-X.tar.bz2
+  /usr/src/libgweather-2.24.2-X-src.tar.bz2
+  /usr/src/libgweather-devel-2.24.2-X.tar.bz2
+  /usr/src/libgweather1-2.24.2-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary packages:
 
-(libgweather)
+(libgweather1)
   /etc/gconf/schemas/gweather.schemas
   /etc/postinstall/libgweather.sh
   /etc/preremove/libgweather.sh
   /usr/bin/cyggweather-1.dll
-  /usr/share/doc/libgweather-2.22.3/COPYING
-  /usr/share/doc/libgweather-2.22.3/ChangeLog
-  /usr/share/doc/libgweather-2.22.3/INSTALL
-  /usr/share/doc/libgweather-2.22.3/MAINTAINERS
-  /usr/share/doc/libgweather-2.22.3/NEWS
-  /usr/share/doc/libgweather-2.22.3/README
+  /usr/share/doc/libgweather-2.24.2/AUTHORS
+  /usr/share/doc/libgweather-2.24.2/COPYING
+  /usr/share/doc/libgweather-2.24.2/ChangeLog
+  /usr/share/doc/libgweather-2.24.2/INSTALL
+  /usr/share/doc/libgweather-2.24.2/MAINTAINERS
+  /usr/share/doc/libgweather-2.24.2/NEWS
+  /usr/share/doc/libgweather-2.24.2/README
   /usr/share/libgweather/Locations.ang.xml
   /usr/share/libgweather/Locations.ar.xml
   /usr/share/libgweather/Locations.as.xml
@@ -132,7 +132,7 @@ Files included in the binary packages:
   /usr/share/libgweather/Locations.sl.xml
   /usr/share/libgweather/Locations.sq.xml
   /usr/share/libgweather/Locations.sr.xml
-  /usr/share/libgweather/Locations.sr@Latn.xml
+  /usr/share/libgweather/Locations.sr@latin.xml
   /usr/share/libgweather/Locations.sv.xml
   /usr/share/libgweather/Locations.ta.xml
   /usr/share/libgweather/Locations.te.xml
@@ -230,7 +230,7 @@ Files included in the binary packages:
   /usr/share/locale/sl/LC_MESSAGES/libgweather.mo
   /usr/share/locale/sq/LC_MESSAGES/libgweather.mo
   /usr/share/locale/sr/LC_MESSAGES/libgweather.mo
-  /usr/share/locale/sr@Latn/LC_MESSAGES/libgweather.mo
+  /usr/share/locale/sr@latin/LC_MESSAGES/libgweather.mo
   /usr/share/locale/sv/LC_MESSAGES/libgweather.mo
   /usr/share/locale/ta/LC_MESSAGES/libgweather.mo
   /usr/share/locale/te/LC_MESSAGES/libgweather.mo
@@ -245,9 +245,14 @@ Files included in the binary packages:
   /usr/share/locale/zh_TW/LC_MESSAGES/libgweather.mo
 
 (libgweather-devel)
+  /usr/include/libgweather/gweather-enum-types.h
   /usr/include/libgweather/gweather-gconf.h
+  /usr/include/libgweather/gweather-location.h
   /usr/include/libgweather/gweather-prefs.h
+  /usr/include/libgweather/gweather-timezone.h
   /usr/include/libgweather/gweather-xml.h
+  /usr/include/libgweather/location-entry.h
+  /usr/include/libgweather/timezone-menu.h
   /usr/include/libgweather/weather.h
   /usr/lib/libgweather.dll.a
   /usr/lib/libgweather.la
@@ -256,6 +261,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 2.24.2-1 -----
+Version bump for GNOME 2.24.
 
 ----- version 2.22.3-1 -----
 Version bump.

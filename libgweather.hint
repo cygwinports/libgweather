@@ -1,0 +1,4 @@
+category: Gnome Net
+sdesc: "GNOME online weather information library (sources)"
+ldesc: "libgweather is a library to access weather information from 
+online services for numerous locations."

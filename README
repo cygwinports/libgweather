@@ -6,12 +6,12 @@ services for numerous locations.
 Runtime requirements:
   cygwin-1.5.25-15
   libgconf2_4-2.24.0-1
-  libgdk_pixbuf2.0_0-2.14.5-1
-  libglib2.0_0-2.18.3-1
-  libgtk2.0_0-2.14.5-1
+  libgdk_pixbuf2.0_0-2.14.7-1
+  libglib2.0_0-2.18.4-1
+  libgtk2.0_0-2.14.7-1
   libintl8-0.17-2
-  libsoup2.4_1-2.24.2.1-1
-  libxml2-2.6.32-2
+  libsoup2.4_1-2.24.3-1
+  libxml2-2.7.3-1
 
 Build requirements:
 (besides corresponding -devel packages)
@@ -38,16 +38,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libgweather-2.24.2-X-src.tar.bz2
+  unpack libgweather-2.24.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libgweather-2.24.2-X.cygport all
+  cygport ./libgweather-2.24.3-X.cygport all
 
 This will create:
-  /usr/src/libgweather-2.24.2-X-src.tar.bz2
-  /usr/src/libgweather-devel-2.24.2-X.tar.bz2
-  /usr/src/libgweather1-2.24.2-X.tar.bz2
+  /usr/src/libgweather-2.24.3-X-src.tar.bz2
+  /usr/src/libgweather-devel-2.24.3-X.tar.bz2
+  /usr/src/libgweather1-2.24.3-X.tar.bz2
 
 -------------------------------------------
 
@@ -58,13 +58,13 @@ Files included in the binary packages:
   /etc/postinstall/libgweather.sh
   /etc/preremove/libgweather.sh
   /usr/bin/cyggweather-1.dll
-  /usr/share/doc/libgweather-2.24.2/AUTHORS
-  /usr/share/doc/libgweather-2.24.2/COPYING
-  /usr/share/doc/libgweather-2.24.2/ChangeLog
-  /usr/share/doc/libgweather-2.24.2/INSTALL
-  /usr/share/doc/libgweather-2.24.2/MAINTAINERS
-  /usr/share/doc/libgweather-2.24.2/NEWS
-  /usr/share/doc/libgweather-2.24.2/README
+  /usr/share/doc/libgweather-2.24.3/AUTHORS
+  /usr/share/doc/libgweather-2.24.3/COPYING
+  /usr/share/doc/libgweather-2.24.3/ChangeLog
+  /usr/share/doc/libgweather-2.24.3/INSTALL
+  /usr/share/doc/libgweather-2.24.3/MAINTAINERS
+  /usr/share/doc/libgweather-2.24.3/NEWS
+  /usr/share/doc/libgweather-2.24.3/README
   /usr/share/libgweather/Locations.ang.xml
   /usr/share/libgweather/Locations.ar.xml
   /usr/share/libgweather/Locations.as.xml
@@ -261,6 +261,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 2.24.3-1 -----
+Version bump.
 
 ----- version 2.24.2-1 -----
 Version bump for GNOME 2.24.

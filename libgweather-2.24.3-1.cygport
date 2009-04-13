@@ -1,7 +1,0 @@
-inherit gnome2
-
-DESCRIPTION="GNOME online weather information library"
-
-PKG_NAMES="${PN} ${PN}1 ${PN}-devel"
-libgweather1_CONTENTS="etc/ usr/bin/*-1.dll usr/share/"
-libgweather_devel_CONTENTS="usr/include/ usr/lib/"

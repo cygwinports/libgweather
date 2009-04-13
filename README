@@ -4,28 +4,29 @@ libgweather is a library to access weather information from online
 services for numerous locations.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libgconf2_4-2.24.0-1
-  libgdk_pixbuf2.0_0-2.14.7-1
-  libglib2.0_0-2.18.4-1
-  libgtk2.0_0-2.14.7-1
-  libintl8-0.17-2
-  libsoup2.4_1-2.24.3-1
-  libxml2-2.7.3-1
+  cygwin-1.7.0-45
+  libgcc1-4.3.2-2
+  libgconf2_4-2.26.0-1
+  libgdk_pixbuf2.0_0-2.16.0-1
+  libglib2.0_0-2.20.0-1
+  libgtk2.0_0-2.16.0-1
+  libintl8-0.17-10
+  libsoup2.4_1-2.26.0-1
+  libxml2-2.7.3-10
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.10-1.10.1-2
+  autoconf2.5-2.63-10
+  automake1.10-1.10.1-10
   binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gettext-devel-0.17-2
-  gnome-common-2.24.0-1
-  intltool-0.40.5-1
-  libtool-2.2.6a-1
-  make-3.81-1
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gettext-devel-0.17-10
+  gnome-common-2.26.0-1
+  intltool-0.40.6-1
+  libtool-2.2.7a-12
+  make-3.81-2
   pkg-config-0.23a-2
   sed-4.1.5-2
 
@@ -38,16 +39,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libgweather-2.24.3-X-src.tar.bz2
+  unpack libgweather-2.26.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libgweather-2.24.3-X.cygport all
+  cygport ./libgweather-2.26.0-X.cygport all
 
 This will create:
-  /usr/src/libgweather-2.24.3-X-src.tar.bz2
-  /usr/src/libgweather-devel-2.24.3-X.tar.bz2
-  /usr/src/libgweather1-2.24.3-X.tar.bz2
+  /usr/src/libgweather-2.26.0-X-src.tar.bz2
+  /usr/src/libgweather-devel-2.26.0-X.tar.bz2
+  /usr/src/libgweather1-2.26.0-X.tar.bz2
 
 -------------------------------------------
 
@@ -58,92 +59,13 @@ Files included in the binary packages:
   /etc/postinstall/libgweather.sh
   /etc/preremove/libgweather.sh
   /usr/bin/cyggweather-1.dll
-  /usr/share/doc/libgweather-2.24.3/AUTHORS
-  /usr/share/doc/libgweather-2.24.3/COPYING
-  /usr/share/doc/libgweather-2.24.3/ChangeLog
-  /usr/share/doc/libgweather-2.24.3/INSTALL
-  /usr/share/doc/libgweather-2.24.3/MAINTAINERS
-  /usr/share/doc/libgweather-2.24.3/NEWS
-  /usr/share/doc/libgweather-2.24.3/README
-  /usr/share/libgweather/Locations.ang.xml
-  /usr/share/libgweather/Locations.ar.xml
-  /usr/share/libgweather/Locations.as.xml
-  /usr/share/libgweather/Locations.az.xml
-  /usr/share/libgweather/Locations.be.xml
-  /usr/share/libgweather/Locations.be@latin.xml
-  /usr/share/libgweather/Locations.bg.xml
-  /usr/share/libgweather/Locations.bn.xml
-  /usr/share/libgweather/Locations.bn_IN.xml
-  /usr/share/libgweather/Locations.bs.xml
-  /usr/share/libgweather/Locations.ca.xml
-  /usr/share/libgweather/Locations.cs.xml
-  /usr/share/libgweather/Locations.cy.xml
-  /usr/share/libgweather/Locations.da.xml
-  /usr/share/libgweather/Locations.de.xml
-  /usr/share/libgweather/Locations.dz.xml
-  /usr/share/libgweather/Locations.el.xml
-  /usr/share/libgweather/Locations.en_CA.xml
-  /usr/share/libgweather/Locations.en_GB.xml
-  /usr/share/libgweather/Locations.es.xml
-  /usr/share/libgweather/Locations.et.xml
-  /usr/share/libgweather/Locations.eu.xml
-  /usr/share/libgweather/Locations.fa.xml
-  /usr/share/libgweather/Locations.fi.xml
-  /usr/share/libgweather/Locations.fr.xml
-  /usr/share/libgweather/Locations.ga.xml
-  /usr/share/libgweather/Locations.gl.xml
-  /usr/share/libgweather/Locations.gu.xml
-  /usr/share/libgweather/Locations.he.xml
-  /usr/share/libgweather/Locations.hi.xml
-  /usr/share/libgweather/Locations.hr.xml
-  /usr/share/libgweather/Locations.hu.xml
-  /usr/share/libgweather/Locations.id.xml
-  /usr/share/libgweather/Locations.it.xml
-  /usr/share/libgweather/Locations.ja.xml
-  /usr/share/libgweather/Locations.ka.xml
-  /usr/share/libgweather/Locations.kn.xml
-  /usr/share/libgweather/Locations.ko.xml
-  /usr/share/libgweather/Locations.ku.xml
-  /usr/share/libgweather/Locations.ky.xml
-  /usr/share/libgweather/Locations.lt.xml
-  /usr/share/libgweather/Locations.lv.xml
-  /usr/share/libgweather/Locations.mai.xml
-  /usr/share/libgweather/Locations.mg.xml
-  /usr/share/libgweather/Locations.mk.xml
-  /usr/share/libgweather/Locations.ml.xml
-  /usr/share/libgweather/Locations.mn.xml
-  /usr/share/libgweather/Locations.mr.xml
-  /usr/share/libgweather/Locations.ms.xml
-  /usr/share/libgweather/Locations.nb.xml
-  /usr/share/libgweather/Locations.ne.xml
-  /usr/share/libgweather/Locations.nl.xml
-  /usr/share/libgweather/Locations.nn.xml
-  /usr/share/libgweather/Locations.oc.xml
-  /usr/share/libgweather/Locations.or.xml
-  /usr/share/libgweather/Locations.pa.xml
-  /usr/share/libgweather/Locations.pl.xml
-  /usr/share/libgweather/Locations.pt.xml
-  /usr/share/libgweather/Locations.pt_BR.xml
-  /usr/share/libgweather/Locations.ro.xml
-  /usr/share/libgweather/Locations.ru.xml
-  /usr/share/libgweather/Locations.rw.xml
-  /usr/share/libgweather/Locations.si.xml
-  /usr/share/libgweather/Locations.sk.xml
-  /usr/share/libgweather/Locations.sl.xml
-  /usr/share/libgweather/Locations.sq.xml
-  /usr/share/libgweather/Locations.sr.xml
-  /usr/share/libgweather/Locations.sr@latin.xml
-  /usr/share/libgweather/Locations.sv.xml
-  /usr/share/libgweather/Locations.ta.xml
-  /usr/share/libgweather/Locations.te.xml
-  /usr/share/libgweather/Locations.th.xml
-  /usr/share/libgweather/Locations.tr.xml
-  /usr/share/libgweather/Locations.uk.xml
-  /usr/share/libgweather/Locations.vi.xml
+  /usr/share/doc/libgweather/AUTHORS
+  /usr/share/doc/libgweather/COPYING
+  /usr/share/doc/libgweather/ChangeLog
+  /usr/share/doc/libgweather/MAINTAINERS
+  /usr/share/doc/libgweather/NEWS
+  /usr/share/doc/libgweather/README
   /usr/share/libgweather/Locations.xml
-  /usr/share/libgweather/Locations.zh_CN.xml
-  /usr/share/libgweather/Locations.zh_HK.xml
-  /usr/share/libgweather/Locations.zh_TW.xml
   /usr/share/libgweather/locations.dtd
   /usr/share/locale/am/LC_MESSAGES/libgweather.mo
   /usr/share/locale/ar/LC_MESSAGES/libgweather.mo
@@ -257,22 +179,31 @@ Files included in the binary packages:
   /usr/lib/libgweather.dll.a
   /usr/lib/libgweather.la
   /usr/lib/pkgconfig/gweather.pc
+  /usr/share/gtk-doc/html/libgweather/GWeatherLocationEntry.html
+  /usr/share/gtk-doc/html/libgweather/GWeatherTimezoneMenu.html
+  /usr/share/gtk-doc/html/libgweather/ch01.html
+  /usr/share/gtk-doc/html/libgweather/home.png
+  /usr/share/gtk-doc/html/libgweather/index.html
+  /usr/share/gtk-doc/html/libgweather/index.sgml
+  /usr/share/gtk-doc/html/libgweather/left.png
+  /usr/share/gtk-doc/html/libgweather/libgweather-gweather-gconf.html
+  /usr/share/gtk-doc/html/libgweather/libgweather-gweather-location.html
+  /usr/share/gtk-doc/html/libgweather/libgweather-gweather-prefs.html
+  /usr/share/gtk-doc/html/libgweather/libgweather-gweather-timezone.html
+  /usr/share/gtk-doc/html/libgweather/libgweather-gweather-xml.html
+  /usr/share/gtk-doc/html/libgweather/libgweather-weather.html
+  /usr/share/gtk-doc/html/libgweather/libgweather.devhelp
+  /usr/share/gtk-doc/html/libgweather/libgweather.devhelp2
+  /usr/share/gtk-doc/html/libgweather/right.png
+  /usr/share/gtk-doc/html/libgweather/style.css
+  /usr/share/gtk-doc/html/libgweather/up.png
 
 ------------------
 
 Port Notes:
 
------ version 2.24.3-1 -----
-Version bump.
-
------ version 2.24.2-1 -----
-Version bump for GNOME 2.24.
-
------ version 2.22.3-1 -----
-Version bump.
-
------ version 2.22.2-1 -----
-Initial release for Cygwin.
+----- version 2.26.0-1 -----
+Initial release of GNOME 2.26 for Cygwin 1.7.
 
 
 Cygwin port maintained by:

@@ -11,7 +11,8 @@ Runtime requirements:
   libglib2.0_0-2.20.4-1
   libgtk2.0_0-2.16.3-1
   libintl8-0.17-11
-  libsoup2.4_1-2.26.3-1
+  libsoup-gnome2.4_1-2.26.3-2
+  libsoup2.4_1-2.26.3-2
   libxml2-2.7.3-10
 
 Build requirements:

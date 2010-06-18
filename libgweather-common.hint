@@ -1,0 +1,6 @@
+category: Gnome Net
+requires: GConf2
+external-source: libgweather
+sdesc: "GNOME online weather information library (data)"
+ldesc: "libgweather is a library to access weather information from 
+online services for numerous locations."

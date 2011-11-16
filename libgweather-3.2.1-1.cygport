@@ -2,6 +2,13 @@ inherit gnome2
 
 DESCRIPTION="GNOME online weather information library"
 
+DEPEND="gnome-common gtk-doc
+	girepository(Gtk-3.0)
+	pkgconfig(gconf-2.0)
+	pkgconfig(gtk+-3.0)
+	pkgconfig(libsoup-gnome-2.4)
+	pkgconfig(libxml-2.0)"
+
 PKG_NAMES="${PN}3_0 ${PN}-common ${PN}3-devel girepository-GWeather3.0"
 libgweather3_0_CONTENTS="usr/bin/cyggweather-3-0.dll"
 libgweather_common_CONTENTS="--exclude=gir-1.0 --exclude=gtk-doc etc/ usr/share/"

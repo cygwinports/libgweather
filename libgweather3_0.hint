@@ -1,6 +1,0 @@
-category: Gnome Net
-requires: libgweather-common libgconf2_4 libgdk_pixbuf2.0_0 libglib2.0_0 libgtk3_0 libintl8 libsoup2.4_1 libsoup-gnome2.4_1 libxml2
-external-source: libgweather
-sdesc: "GNOME online weather information library (runtime)"
-ldesc: "libgweather is a library to access weather information from 
-online services for numerous locations."

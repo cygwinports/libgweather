@@ -1,6 +1,9 @@
 inherit gnome2
 
-CATEGORY="Gnome"
+NAME="libgweather"
+VERSION=3.6.2
+RELEASE=1
+CATEGORY="GNOME"
 SUMMARY="GNOME online weather information library"
 DESCRIPTION="libgweather is a library to access weather information from
 online services for numerous locations."
@@ -12,11 +15,10 @@ DEPEND="gnome-common gtk-doc
 	pkgconfig(libsoup-gnome-2.4)
 	pkgconfig(libxml-2.0)"
 
-PKG_NAMES="${PN}3_0 ${PN}-common ${PN}3-devel girepository-GWeather3.0"
-libgweather3_0_REQUIRES="libgweather-common"
-libgweather3_0_CONTENTS="usr/bin/cyggweather-3-0.dll"
+PKG_NAMES="${PN}3_1 ${PN}-common ${PN}3-devel girepository-GWeather3.0"
+libgweather3_1_REQUIRES="libgweather-common"
+libgweather3_1_CONTENTS="usr/bin/cyggweather-3-1.dll"
 libgweather_common_CONTENTS="--exclude=gir-1.0 --exclude=gtk-doc etc/ usr/share/"
 libgweather3_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/"
 girepository_GWeather3_0_CONTENTS="usr/*/gir*/GWeather-3.0.*"
 
-KEEP_LA_FILES="none"

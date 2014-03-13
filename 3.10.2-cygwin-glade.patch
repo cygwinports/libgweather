@@ -1,0 +1,9 @@
+--- origsrc/libgweather-3.10.2/data/glade/libgweather.xml.in	2014-02-02 10:33:14.000000000 -0600
++++ src/libgweather-3.10.2/data/glade/libgweather.xml.in	2014-03-12 21:00:11.559414200 -0500
+@@ -1,5 +1,5 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<glade-catalog version="3.0" name="libgweather" library="gweather-3" domain="libgweather-3.0" depends="gtk+" book="libgweather-3.0">
++<glade-catalog version="3.0" name="libgweather" library="gweather-3-6" domain="libgweather-3.0" depends="gtk+" book="libgweather-3.0">
+   <glade-widget-classes>
+     <glade-widget-class name="GWeatherLocationEntry" _title="Location Entry" generic-name="locentry" get-type-function="gweather_location_entry_get_type">
+       <!-- There are no editable properties, because GtkBuilder can't handle boxed types -->

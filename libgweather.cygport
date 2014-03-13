@@ -1,12 +1,19 @@
 inherit gnome2
 
 NAME="libgweather"
-VERSION=3.8.4
+VERSION=3.10.2
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GNOME online weather information library"
 DESCRIPTION="libgweather is a library to access weather information from
 online services for numerous locations."
+
+# fix cygwin-glade patch for SONAME version bumps
+PATCH_URI="
+	3.10.2-glib-gettext.patch
+	3.10.2-cygwin-locale.patch
+	3.10.2-cygwin-glade.patch
+"
 
 DEPEND="gnome-common gtk-doc
 	girepository(Gtk-3.0)
@@ -15,10 +22,14 @@ DEPEND="gnome-common gtk-doc
 	pkgconfig(libsoup-gnome-2.4)
 	pkgconfig(libxml-2.0)"
 
-PKG_NAMES="${NAME}3_3 ${NAME}-common ${NAME}3-devel girepository-GWeather3.0"
-libgweather3_3_REQUIRES="libgweather-common"
-libgweather3_3_CONTENTS="usr/bin/cyggweather-3-3.dll"
-libgweather_common_CONTENTS="--exclude=gir-1.0 --exclude=gtk-doc etc/ usr/share/"
-libgweather3_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/"
+PKG_NAMES="${NAME}3_6 ${NAME}-common ${NAME}3-devel ${NAME}3-doc girepository-GWeather3.0 glade-libgweather3"
+libgweather3_6_REQUIRES="libgweather-common"
+libgweather3_6_CONTENTS="usr/bin/cyggweather-3-6.dll"
+libgweather_common_CONTENTS="--exclude=gir-1.0 --exclude=glade --exclude=gtk-doc etc/ usr/share/"
+libgweather3_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
+libgweather3_doc_CATEGORY="Doc"
+libgweather3_doc_CONTENTS="usr/share/gtk-doc/"
 girepository_GWeather3_0_CONTENTS="usr/*/gir*/GWeather-3.0.*"
-
+glade_libgweather3_CATEGORY="Devel"
+glade_libgweather3_REQUIRES="libgweather3_6"
+glade_libgweather3_CONTENTS="usr/share/glade/"

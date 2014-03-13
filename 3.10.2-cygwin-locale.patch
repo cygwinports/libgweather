@@ -1,0 +1,21 @@
+--- origsrc/libgweather-3.10.2/libgweather/weather.c	2014-02-02 10:38:57.000000000 -0600
++++ src/libgweather-3.10.2/libgweather/weather.c	2014-03-12 20:00:26.447662800 -0500
+@@ -701,6 +701,7 @@ gweather_info_get_conditions (GWeatherIn
+ static gboolean
+ is_locale_metric (void)
+ {
++#ifdef __linux__
+     const char *fmt;
+     fmt = nl_langinfo (_NL_MEASUREMENT_MEASUREMENT);
+ 
+@@ -708,6 +709,10 @@ is_locale_metric (void)
+ 	return FALSE;
+     else
+ 	return TRUE;
++#else
++    /* as big as it is, only the USA does not use metric */
++    return TRUE;
++#endif
+ }
+ 
+ static GWeatherTemperatureUnit

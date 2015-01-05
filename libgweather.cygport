@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="libgweather"
-VERSION=3.10.2
+VERSION=3.14.2
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GNOME online weather information library"
@@ -11,7 +11,6 @@ online services for numerous locations."
 # fix cygwin-glade patch for SONAME version bumps
 PATCH_URI="
 	3.10.2-glib-gettext.patch
-	3.10.2-cygwin-locale.patch
 	3.10.2-cygwin-glade.patch
 "
 
@@ -26,7 +25,7 @@ PKG_NAMES="${NAME}3_6 ${NAME}-common ${NAME}3-devel ${NAME}3-doc girepository-GW
 libgweather3_6_REQUIRES="libgweather-common tzcode"
 libgweather3_6_CONTENTS="usr/bin/cyggweather-3-6.dll"
 libgweather_common_CONTENTS="etc/ usr/share/doc/ usr/share/glib-2.0/schemas/
-	usr/share/icons/ usr/share/libgweather/ usr/share/locale/"
+	usr/share/libgweather/ usr/share/locale/"
 libgweather3_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
 libgweather3_doc_CATEGORY="Doc"
 libgweather3_doc_CONTENTS="usr/share/gtk-doc/"

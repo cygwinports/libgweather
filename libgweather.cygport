@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="libgweather"
-VERSION=3.14.4
+VERSION=3.18.1
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GNOME online weather information library"
@@ -26,6 +26,7 @@ libgweather3_6_REQUIRES="libgweather-common tzcode"
 libgweather3_6_CONTENTS="usr/bin/cyggweather-3-6.dll"
 libgweather_common_CONTENTS="etc/ usr/share/doc/ usr/share/glib-2.0/schemas/
 	usr/share/libgweather/ usr/share/locale/"
+libgweather3_devel_REQUIRES="girepository-GWeather3.0 vala-gweather3.0"
 libgweather3_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
 libgweather3_doc_CATEGORY="Doc"
 libgweather3_doc_CONTENTS="usr/share/gtk-doc/"
